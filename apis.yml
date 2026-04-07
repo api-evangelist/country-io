@@ -5,8 +5,8 @@ apis:
   - aid: country-io:country-io
     name: Country.io
     tags:
-      - countries
       - Capitals
+      - Countries
     humanURL: https://country.io/
     properties:
       - url: https://country.io/
@@ -19,8 +19,8 @@ apis:
       or anyone interested in learning more about specific countries.
 name: Country.io
 tags:
-  - countries
   - Capitals
+  - Countries
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
