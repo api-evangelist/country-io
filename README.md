@@ -1,42 +1,45 @@
 # Country.io (country-io)
-Country.io is a website that provides detailed information about countries around the world. Users can search for a specific country and find data such as its population, area, capital city, currency, and official language. Country.io also offers a list of countries grouped by various categories, such as continent, region, and income level. The website aims to be a convenient and reliable source of information for those interested in learning more about different countries and their unique characteristics.
+
+Country.io is a small open data project that publishes a set of static JSON files mapping ISO 3166-1 alpha-2 country codes to common reference data: country names, capital cities, alpha-3 codes, continent codes, international dialing prefixes, and ISO 4217 currency codes.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/country-io/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Index 
-- **Position:** Consumer 
-- **Access:** 3rd-Party 
+- **Type:** Index
+- **Position:** Provider
+- **Access:** Public
+- **x-type:** company
 
-## Tags:
+## Tags
 
- - countries, Capitals
+- Capitals, Continents, Countries, Currencies, Currency Codes, Dialing Codes, Geography, ISO 3166, JSON, Open Data, Phone Codes, Reference Data
 
 ## Timestamps
 
-- **Created:** 2025-02-21 
-- **Modified:** 2025-03-01 
+- **Created:** 2025-02-21
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Country.io
-Country.io is a platform that provides users with detailed information about different countries around the world. Users can access data such as population statistics, geographic location, government type, and economic indicators for each country. This information can be useful for researchers, students, travelers, or anyone interested in learning more about specific countries. Country.io aims to promote global awareness and understanding by offering easily accessible and comprehensive country profiles.
+### Country.io Data API
 
-**Human URL:** [ https://country.io/]( https://country.io/)
+Six static JSON files keyed by ISO 3166-1 alpha-2 country code, mapping to country names, capital cities, continent codes, ISO3 codes, dialing prefixes, and currency codes.
 
+- [Documentation](https://country.io/data/)
+- [OpenAPI](openapi/country-io-data-openapi.yml)
+- [Rules](rules/country-io-data-rules.yml)
+- [Capabilities](capabilities/country-io-data-capabilities.yml)
 
-#### Tags:
+## Common Properties
 
- - countries, Capitals
-
-#### Properties
-
-- [Documentation]( https://country.io/)
+- [Website](https://country.io/)
+- [Data](https://country.io/data/)
+- [Countries](https://country.io/countries/)
+- [Rankings](https://country.io/rankings/)
+- [Vocabulary](vocabulary/country-io-vocabulary.yml)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
-**Email:** info@apievangelist.com
-
+**Email:** kin@apievangelist.com

@@ -1,0 +1,35 @@
+name: Country.io Vocabulary
+description: >-
+  Controlled vocabulary of the country reference concepts exposed by the
+  Country.io JSON data files.
+url: https://country.io/data/
+version: '1.0'
+modified: '2026-04-28'
+concepts:
+  - name: ISO 3166-1 alpha-2
+    description: Two-letter country code used as the primary key across Country.io data files.
+  - name: ISO 3166-1 alpha-3
+    description: Three-letter country code mapped from the alpha-2 key.
+  - name: Country Name
+    description: Common English-language name of a country.
+  - name: Capital City
+    description: Designated capital city of the country.
+  - name: Continent Code
+    description: Two-letter continent code (AF, AN, AS, EU, NA, OC, SA).
+  - name: Dialing Code
+    description: International telephone dialing prefix.
+  - name: Currency Code
+    description: ISO 4217 three-letter currency code commonly associated with the country.
+files:
+  - name: names.json
+    description: ISO2 to country name map.
+  - name: capital.json
+    description: ISO2 to capital city map.
+  - name: continent.json
+    description: ISO2 to continent code map.
+  - name: iso3.json
+    description: ISO2 to ISO3 code map.
+  - name: phone.json
+    description: ISO2 to international dialing prefix map.
+  - name: currency.json
+    description: ISO2 to currency code map.

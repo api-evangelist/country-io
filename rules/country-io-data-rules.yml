@@ -1,0 +1,65 @@
+extends: ["spectral:oas"]
+documentationUrl: https://country.io/data/
+rules:
+  country-io-info-title:
+    description: API title must mention Country.io.
+    given: "$.info.title"
+    severity: error
+    then:
+      function: pattern
+      functionOptions:
+        match: "Country.io"
+  country-io-server:
+    description: Servers must reference https://country.io.
+    given: "$.servers[*].url"
+    severity: warn
+    then:
+      function: pattern
+      functionOptions:
+        match: "country.io"
+  country-io-paths-json:
+    description: All Country.io data paths must end in .json.
+    given: "$.paths"
+    severity: error
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          patternProperties:
+            "^/[a-z0-9_-]+\\.json$": {}
+          additionalProperties: false
+  country-io-get-only:
+    description: Country.io data endpoints must only support GET.
+    given: "$.paths.*"
+    severity: error
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          properties:
+            get:
+              type: object
+          additionalProperties: false
+  country-io-operation-id:
+    description: Operations must define an operationId.
+    given: "$.paths.*.get"
+    severity: error
+    then:
+      field: operationId
+      function: truthy
+  country-io-tags:
+    description: Operations must define at least one tag.
+    given: "$.paths.*.get"
+    severity: error
+    then:
+      field: tags
+      function: truthy
+  country-io-200-json-response:
+    description: Each endpoint must define a 200 application/json response.
+    given: "$.paths.*.get.responses.200.content"
+    severity: error
+    then:
+      field: application/json
+      function: truthy
