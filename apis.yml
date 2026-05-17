@@ -1,6 +1,6 @@
 aid: country-io
 name: Country.io
-x-type: company
+kind: company
 description: >-
   Country.io is a small open data project that publishes a set of static JSON
   files mapping ISO 3166-1 alpha-2 country codes to common reference data:
