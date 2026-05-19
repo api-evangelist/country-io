@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Country.io Data API — Phone
+  description: 'Country.io Data API — Phone. 1 operations. Lead operation: Get international dialing codes keyed by ISO2 country
+    code. Self-contained Naftiko capability covering one Country Io business surface.'
+  tags:
+  - Country Io
+  - Phone
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    COUNTRY_IO_API_KEY: COUNTRY_IO_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: data-phone
+    baseUri: https://country.io
+    description: Country.io Data API — Phone business capability. Self-contained, no shared references.
+    resources:
+    - name: phone.json
+      path: /phone.json
+      operations:
+      - name: getphonecodes
+        method: GET
+        description: Get international dialing codes keyed by ISO2 country code
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: data-phone-rest
+    port: 8080
+    description: REST adapter for Country.io Data API — Phone. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/phone-json
+      name: phone-json
+      description: REST surface for phone.json.
+      operations:
+      - method: GET
+        name: getphonecodes
+        description: Get international dialing codes keyed by ISO2 country code
+        call: data-phone.getphonecodes
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: data-phone-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Country.io Data API — Phone. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: get-international-dialing-codes-keyed
+      description: Get international dialing codes keyed by ISO2 country code
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: data-phone.getphonecodes
+      outputParameters:
+      - type: object
+        mapping: $.

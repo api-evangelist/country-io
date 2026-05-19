@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Country.io Data API — Names
+  description: 'Country.io Data API — Names. 1 operations. Lead operation: Get country names keyed by ISO2 code. Self-contained
+    Naftiko capability covering one Country Io business surface.'
+  tags:
+  - Country Io
+  - Names
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    COUNTRY_IO_API_KEY: COUNTRY_IO_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: data-names
+    baseUri: https://country.io
+    description: Country.io Data API — Names business capability. Self-contained, no shared references.
+    resources:
+    - name: names.json
+      path: /names.json
+      operations:
+      - name: getcountrynames
+        method: GET
+        description: Get country names keyed by ISO2 code
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: data-names-rest
+    port: 8080
+    description: REST adapter for Country.io Data API — Names. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/names-json
+      name: names-json
+      description: REST surface for names.json.
+      operations:
+      - method: GET
+        name: getcountrynames
+        description: Get country names keyed by ISO2 code
+        call: data-names.getcountrynames
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: data-names-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Country.io Data API — Names. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: get-country-names-keyed-iso2
+      description: Get country names keyed by ISO2 code
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: data-names.getcountrynames
+      outputParameters:
+      - type: object
+        mapping: $.

@@ -1,0 +1,67 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Country.io Data API — Capitals
+  description: 'Country.io Data API — Capitals. 1 operations. Lead operation: Get capital cities keyed by ISO2 code. Self-contained
+    Naftiko capability covering one Country Io business surface.'
+  tags:
+  - Country Io
+  - Capitals
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    COUNTRY_IO_API_KEY: COUNTRY_IO_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: data-capitals
+    baseUri: https://country.io
+    description: Country.io Data API — Capitals business capability. Self-contained, no shared references.
+    resources:
+    - name: capital.json
+      path: /capital.json
+      operations:
+      - name: getcapitals
+        method: GET
+        description: Get capital cities keyed by ISO2 code
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    namespace: data-capitals-rest
+    port: 8080
+    description: REST adapter for Country.io Data API — Capitals. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/capital-json
+      name: capital-json
+      description: REST surface for capital.json.
+      operations:
+      - method: GET
+        name: getcapitals
+        description: Get capital cities keyed by ISO2 code
+        call: data-capitals.getcapitals
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: data-capitals-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Country.io Data API — Capitals. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: get-capital-cities-keyed-iso2
+      description: Get capital cities keyed by ISO2 code
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: data-capitals.getcapitals
+      outputParameters:
+      - type: object
+        mapping: $.
