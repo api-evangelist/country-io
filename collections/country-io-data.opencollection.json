@@ -1,0 +1,124 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Country.io Data API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Names",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get country names keyed by ISO2 code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/names.json"
+          },
+          "docs": "Get country names keyed by ISO2 code"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Capitals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get capital cities keyed by ISO2 code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/capital.json"
+          },
+          "docs": "Get capital cities keyed by ISO2 code"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Continents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get continent codes keyed by ISO2 country code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/continent.json"
+          },
+          "docs": "Get continent codes keyed by ISO2 country code"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "ISO3",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/iso3.json"
+          },
+          "docs": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Phone",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get international dialing codes keyed by ISO2 country code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/phone.json"
+          },
+          "docs": "Get international dialing codes keyed by ISO2 country code"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Currency",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get currency codes keyed by ISO2 country code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/currency.json"
+          },
+          "docs": "Get currency codes keyed by ISO2 country code"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

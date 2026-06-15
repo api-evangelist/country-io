@@ -1,0 +1,489 @@
+{
+  "item": [
+    {
+      "id": "b9eb3945-0cc1-4efd-aadd-1ddf0995c5ef",
+      "name": "Names",
+      "description": {
+        "content": "Country names by ISO2 code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2031f230-86aa-42b7-a933-76895a496ce4",
+          "name": "Get country names keyed by ISO2 code",
+          "request": {
+            "name": "Get country names keyed by ISO2 code",
+            "description": {},
+            "url": {
+              "path": [
+                "names.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1c109c67-d833-45cc-afbe-ad8c66b78d35",
+              "name": "A JSON object mapping ISO2 country codes to country names.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "names.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"United States\",\n  \"GB\": \"United Kingdom\",\n  \"FR\": \"France\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "2036c605-8987-40ec-b4dc-cecef581a964",
+      "name": "Capitals",
+      "description": {
+        "content": "Capital cities by ISO2 code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "872fce61-d7e1-4058-8990-dba5d90d9360",
+          "name": "Get capital cities keyed by ISO2 code",
+          "request": {
+            "name": "Get capital cities keyed by ISO2 code",
+            "description": {},
+            "url": {
+              "path": [
+                "capital.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03112792-7caa-44ef-92bb-7057a4cc9bc7",
+              "name": "A JSON object mapping ISO2 country codes to capital city names.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "capital.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"Washington\",\n  \"GB\": \"London\",\n  \"FR\": \"Paris\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "32a3ce27-47bc-4a34-95fb-5f834829757d",
+      "name": "Continents",
+      "description": {
+        "content": "Continent codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d96a8932-e6af-4ffc-b0fe-258cb43fe106",
+          "name": "Get continent codes keyed by ISO2 country code",
+          "request": {
+            "name": "Get continent codes keyed by ISO2 country code",
+            "description": {},
+            "url": {
+              "path": [
+                "continent.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "409451b8-77eb-4371-b36e-38ff5d02c418",
+              "name": "A JSON object mapping ISO2 country codes to two-letter continent codes (AF, AN, AS, EU, NA, OC, SA).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "continent.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"NA\",\n  \"GB\": \"EU\",\n  \"JP\": \"AS\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "3df22ef7-2a8f-4de8-a000-91b5111db6e0",
+      "name": "ISO3",
+      "description": {
+        "content": "ISO 3166-1 alpha-3 codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "201e22fd-9cc1-498a-9b8a-3bed98c90709",
+          "name": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code",
+          "request": {
+            "name": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code",
+            "description": {},
+            "url": {
+              "path": [
+                "iso3.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d01a4258-c654-4296-b8e8-5d79cd71449b",
+              "name": "A JSON object mapping ISO2 country codes to ISO 3166-1 alpha-3 codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "iso3.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"USA\",\n  \"GB\": \"GBR\",\n  \"FR\": \"FRA\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "d7717a53-a1d8-4148-bba9-472d8cd1ded8",
+      "name": "Phone",
+      "description": {
+        "content": "International dialing codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f503f1e7-97b8-4690-be4a-35473f54d9e5",
+          "name": "Get international dialing codes keyed by ISO2 country code",
+          "request": {
+            "name": "Get international dialing codes keyed by ISO2 country code",
+            "description": {},
+            "url": {
+              "path": [
+                "phone.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b3db60f1-ed68-470c-9380-fd9dee537de3",
+              "name": "A JSON object mapping ISO2 country codes to international dialing prefixes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "phone.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"1\",\n  \"GB\": \"44\",\n  \"FR\": \"33\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "2c9c8585-2a27-45fc-9c17-90a947762cfa",
+      "name": "Currency",
+      "description": {
+        "content": "Currency codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8fe0b66a-0288-4aa8-8d33-586ef7fcb297",
+          "name": "Get currency codes keyed by ISO2 country code",
+          "request": {
+            "name": "Get currency codes keyed by ISO2 country code",
+            "description": {},
+            "url": {
+              "path": [
+                "currency.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "75b9184d-13e7-4573-8bab-54cf7ffec9f1",
+              "name": "A JSON object mapping ISO2 country codes to ISO 4217 currency codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "currency.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"USD\",\n  \"GB\": \"GBP\",\n  \"FR\": \"EUR\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://country.io",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9ad9b3f6-8f8d-404b-82ee-189550767062",
+    "name": "Country.io Data API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.\n\nContact Support:\n Name: Country.io",
+      "type": "text/plain"
+    }
+  }
+}
