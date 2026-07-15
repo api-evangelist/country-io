@@ -54,6 +54,8 @@ apis:
       - Phone Codes
       - Reference Data
 common:
+  - type: AgenticAccess
+    url: agentic-access/country-io-agentic-access.yml
   - type: DomainSecurity
     url: security/country-io-domain-security.yml
   - type: Website
