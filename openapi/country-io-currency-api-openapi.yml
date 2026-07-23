@@ -1,0 +1,40 @@
+openapi: 3.1.0
+info:
+  title: Country.io Data Capitals Currency API
+  description: Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.
+  version: '1.0'
+  contact:
+    name: Country.io
+    url: https://country.io/contact/
+  license:
+    name: Country.io Data
+    url: https://country.io/
+servers:
+- url: https://country.io
+  description: Country.io static JSON host
+tags:
+- name: Currency
+  description: Currency codes by ISO2 country code.
+paths:
+  /currency.json:
+    get:
+      operationId: getCurrencyCodes
+      summary: Get currency codes keyed by ISO2 country code
+      tags:
+      - Currency
+      responses:
+        '200':
+          description: A JSON object mapping ISO2 country codes to ISO 4217 currency codes.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+                example:
+                  US: USD
+                  GB: GBP
+                  FR: EUR
+externalDocs:
+  description: Country.io Data Index
+  url: https://country.io/data/
