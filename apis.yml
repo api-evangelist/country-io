@@ -7,7 +7,19 @@ description: >-
   international telephone dialing prefixes, and ISO 4217 currency codes. The files are commonly consumed as a
   lightweight country-data dataset for forms, country pickers, and analytics enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/country-io/refs/heads/main/apis.yml
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/country-io.png
 type: Index
 access: Public
 position: Provider
@@ -28,31 +40,102 @@ created: '2025-02-21'
 modified: '2026-05-19'
 specificationVersion: '0.20'
 apis:
-  - aid: country-io:country-io-data-api
-    name: Country.io Data API
-    description: >-
-      Country.io exposes six static JSON files under https://country.io. Each file is a flat object keyed by ISO 3166-1
-      alpha-2 country code and maps to a single reference value: country name, capital city, continent code, ISO3 code,
-      dialing prefix, or currency code. The endpoints are open and unauthenticated.
-    humanURL: https://country.io/data/
-    baseURL: https://country.io
-    properties:
-      - type: Documentation
-        url: https://country.io/data/
-      - type: OpenAPI
-        url: openapi/country-io-data-openapi.yml
-      - type: Rules
-        url: rules/country-io-data-rules.yml
-      - type: Capabilities
-        url: capabilities/country-io-data-capabilities.yml
-    tags:
-      - Capitals
-      - Countries
-      - Currencies
-      - ISO 3166
-      - Open Data
-      - Phone Codes
-      - Reference Data
+- aid: country-io:country-io-capitals-api
+  name: Country.io Capitals API
+  description: Capital cities by ISO2 code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - Capitals
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-capitals-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
+- aid: country-io:country-io-continents-api
+  name: Country.io Continents API
+  description: Continent codes by ISO2 country code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - Continents
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-continents-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
+- aid: country-io:country-io-currency-api
+  name: Country.io Currency API
+  description: Currency codes by ISO2 country code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - Currency
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-currency-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
+- aid: country-io:country-io-iso3-api
+  name: Country.io ISO3 API
+  description: ISO 3166-1 alpha-3 codes by ISO2 country code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - ISO3
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-iso3-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
+- aid: country-io:country-io-names-api
+  name: Country.io Names API
+  description: Country names by ISO2 code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - Names
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-names-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
+- aid: country-io:country-io-phone-api
+  name: Country.io Phone API
+  description: International dialing codes by ISO2 country code.
+  humanURL: https://country.io/data/
+  baseURL: https://country.io
+  tags:
+  - Phone
+  properties:
+  - type: OpenAPI
+    url: openapi/country-io-phone-api-openapi.yml
+  - type: Documentation
+    url: https://country.io/data/
+  - type: Rules
+    url: rules/country-io-data-rules.yml
+  - type: Capabilities
+    url: capabilities/country-io-data-capabilities.yml
 common:
   - type: AgenticAccess
     url: agentic-access/country-io-agentic-access.yml
