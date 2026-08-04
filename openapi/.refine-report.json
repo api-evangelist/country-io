@@ -1,0 +1,24 @@
+{
+  "provider": "country-io",
+  "sources": [
+    "country-io-capitals-api-openapi.yml",
+    "country-io-continents-api-openapi.yml",
+    "country-io-currency-api-openapi.yml",
+    "country-io-iso3-api-openapi.yml",
+    "country-io-names-api-openapi.yml",
+    "country-io-phone-api-openapi.yml"
+  ],
+  "outputs": [
+    "country-io-capitals-api-openapi.yml",
+    "country-io-continents-api-openapi.yml",
+    "country-io-currency-api-openapi.yml",
+    "country-io-iso3-api-openapi.yml",
+    "country-io-names-api-openapi.yml",
+    "country-io-phone-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
