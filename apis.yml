@@ -54,8 +54,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 - aid: country-io:country-io-continents-api
   name: Country.io Continents API
   description: Continent codes by ISO2 country code.
@@ -70,8 +68,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 - aid: country-io:country-io-currency-api
   name: Country.io Currency API
   description: Currency codes by ISO2 country code.
@@ -86,8 +82,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 - aid: country-io:country-io-iso3-api
   name: Country.io ISO3 API
   description: ISO 3166-1 alpha-3 codes by ISO2 country code.
@@ -102,8 +96,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 - aid: country-io:country-io-names-api
   name: Country.io Names API
   description: Country names by ISO2 code.
@@ -118,8 +110,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 - aid: country-io:country-io-phone-api
   name: Country.io Phone API
   description: International dialing codes by ISO2 country code.
@@ -134,8 +124,6 @@ apis:
     url: https://country.io/data/
   - type: Rules
     url: rules/country-io-data-rules.yml
-  - type: Capabilities
-    url: capabilities/country-io-data-capabilities.yml
 common:
   - type: AgenticAccess
     url: agentic-access/country-io-agentic-access.yml
