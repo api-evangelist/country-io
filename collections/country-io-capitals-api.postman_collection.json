@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "79a09ed4-aaac-404b-998d-60aafabf286c",
+      "name": "Capitals",
+      "description": {
+        "content": "Capital cities by ISO2 code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3dc99030-fc5a-4996-b278-f288122a6a62",
+          "name": "Get capital cities keyed by ISO2 code",
+          "request": {
+            "name": "Get capital cities keyed by ISO2 code",
+            "description": {},
+            "url": {
+              "path": [
+                "capital.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "12d1a8e5-18f8-449f-adc8-626bf0ba5c03",
+              "name": "A JSON object mapping ISO2 country codes to capital city names.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "capital.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"Washington\",\n  \"GB\": \"London\",\n  \"FR\": \"Paris\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://country.io",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "dbc2e7ec-ca55-4def-a115-39c4d99edb06",
+    "name": "Country.io Data Capitals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.\n\nContact Support:\n Name: Country.io",
+      "type": "text/plain"
+    }
+  }
+}

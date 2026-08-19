@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Country.io Data Capitals Continents API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Continents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get continent codes keyed by ISO2 country code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/continent.json"
+          },
+          "docs": "Get continent codes keyed by ISO2 country code"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

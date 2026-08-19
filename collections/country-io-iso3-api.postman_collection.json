@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "c95d644d-08d6-4cda-85a7-418ddb96b5af",
+      "name": "ISO3",
+      "description": {
+        "content": "ISO 3166-1 alpha-3 codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "86e6d202-0d00-46cb-a529-d7a5e9d3cc1f",
+          "name": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code",
+          "request": {
+            "name": "Get ISO 3166-1 alpha-3 codes keyed by ISO2 code",
+            "description": {},
+            "url": {
+              "path": [
+                "iso3.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "50121c9a-b6b2-41e7-a975-d3e84b0d61ea",
+              "name": "A JSON object mapping ISO2 country codes to ISO 3166-1 alpha-3 codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "iso3.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"USA\",\n  \"GB\": \"GBR\",\n  \"FR\": \"FRA\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://country.io",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3d1a667a-5d8c-4e14-ad18-684dfeac5d44",
+    "name": "Country.io Data Capitals ISO3 API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.\n\nContact Support:\n Name: Country.io",
+      "type": "text/plain"
+    }
+  }
+}

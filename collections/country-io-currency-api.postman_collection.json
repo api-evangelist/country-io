@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "31075403-d8cb-4842-9105-4a5ca936e8b3",
+      "name": "Currency",
+      "description": {
+        "content": "Currency codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3f0c1c8f-d172-4750-82dc-b5d6ad63b32a",
+          "name": "Get currency codes keyed by ISO2 country code",
+          "request": {
+            "name": "Get currency codes keyed by ISO2 country code",
+            "description": {},
+            "url": {
+              "path": [
+                "currency.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "71ee3bc7-320b-4e18-9e4c-4b133afca34b",
+              "name": "A JSON object mapping ISO2 country codes to ISO 4217 currency codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "currency.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"USD\",\n  \"GB\": \"GBP\",\n  \"FR\": \"EUR\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://country.io",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "51c7a208-1d4a-42da-ba0c-cfe0a299a342",
+    "name": "Country.io Data Capitals Currency API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.\n\nContact Support:\n Name: Country.io",
+      "type": "text/plain"
+    }
+  }
+}

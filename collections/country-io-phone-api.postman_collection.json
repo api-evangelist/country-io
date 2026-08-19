@@ -1,0 +1,99 @@
+{
+  "item": [
+    {
+      "id": "79f59fd8-331a-4404-b655-1415361627b7",
+      "name": "Phone",
+      "description": {
+        "content": "International dialing codes by ISO2 country code.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "302dea8b-e28b-435c-a031-902ea6510334",
+          "name": "Get international dialing codes keyed by ISO2 country code",
+          "request": {
+            "name": "Get international dialing codes keyed by ISO2 country code",
+            "description": {},
+            "url": {
+              "path": [
+                "phone.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b89a4121-58fe-4461-9bd7-18248bfb4a9d",
+              "name": "A JSON object mapping ISO2 country codes to international dialing prefixes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "phone.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"US\": \"1\",\n  \"GB\": \"44\",\n  \"FR\": \"33\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://country.io",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "d8468bbe-5e8b-44b1-95a1-b2ee64d6e21d",
+    "name": "Country.io Data Capitals Phone API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Country.io publishes a small set of static JSON files that map ISO 3166-1 alpha-2 country codes to common reference data (country names, capital cities, continent codes, ISO 3166-1 alpha-3 codes, telephone dialing codes, and currency codes). Each endpoint returns a flat JSON object keyed by the two-letter country code.\n\nContact Support:\n Name: Country.io",
+      "type": "text/plain"
+    }
+  }
+}

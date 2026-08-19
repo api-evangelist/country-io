@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Country.io Data Capitals Names API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Names",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get country names keyed by ISO2 code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://country.io/names.json"
+          },
+          "docs": "Get country names keyed by ISO2 code"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
