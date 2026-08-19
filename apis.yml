@@ -38,7 +38,7 @@ tags:
   - Reference Data
 created: '2025-02-21'
 modified: '2026-05-19'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 apis:
 - aid: country-io:country-io-capitals-api
   name: Country.io Capitals API
