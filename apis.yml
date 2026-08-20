@@ -27,6 +27,19 @@ tags:
   - Capitals
   - Continents
   - Countries
+  - Currency
+  - Currency Codes
+  - Dialing Codes
+  - Geography
+  - ISO 3166
+  - JSON
+  - Open Data
+  - Phone Codes
+  - Reference Data
+tags_raw:
+  - Capitals
+  - Continents
+  - Countries
   - Currencies
   - Currency Codes
   - Dialing Codes
@@ -102,6 +115,8 @@ apis:
   humanURL: https://country.io/data/
   baseURL: https://country.io
   tags:
+  - Name
+  tags_raw:
   - Names
   properties:
   - type: OpenAPI
