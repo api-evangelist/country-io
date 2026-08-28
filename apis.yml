@@ -7,6 +7,17 @@ description: >-
   international telephone dialing prefixes, and ISO 4217 currency codes. The files are commonly consumed as a
   lightweight country-data dataset for forms, country pickers, and analytics enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/country-io/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: true
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
