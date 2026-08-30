@@ -126,7 +126,7 @@ apis:
   humanURL: https://country.io/data/
   baseURL: https://country.io
   tags:
-  - Name
+  - Names
   tags_raw:
   - Names
   properties:
