@@ -35,7 +35,7 @@ type: Index
 access: Public
 position: Producing
 tags:
-  - Capitals
+  - Capital
   - Continents
   - Countries
   - Currency
@@ -70,6 +70,8 @@ apis:
   humanURL: https://country.io/data/
   baseURL: https://country.io
   tags:
+  - Capital
+  tags_raw:
   - Capitals
   properties:
   - type: OpenAPI
