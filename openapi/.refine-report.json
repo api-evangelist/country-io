@@ -1,12 +1,7 @@
 {
   "provider": "country-io",
   "sources": [
-    "country-io-capitals-api-openapi.yml",
-    "country-io-continents-api-openapi.yml",
-    "country-io-currency-api-openapi.yml",
-    "country-io-iso3-api-openapi.yml",
-    "country-io-names-api-openapi.yml",
-    "country-io-phone-api-openapi.yml"
+    "_original/country-io-data-openapi.yml"
   ],
   "outputs": [
     "country-io-capitals-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "country-io-data-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "country-io-capitals-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "country-io-continents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "country-io-currency-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "country-io-iso3-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "country-io-names-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "country-io-phone-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
