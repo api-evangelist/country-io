@@ -68,7 +68,6 @@ apis:
   name: Country.io Capitals API
   description: Capital cities by ISO2 code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - Capital
   tags_raw:
@@ -84,7 +83,6 @@ apis:
   name: Country.io Continents API
   description: Continent codes by ISO2 country code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - Continents
   properties:
@@ -98,7 +96,6 @@ apis:
   name: Country.io Currency API
   description: Currency codes by ISO2 country code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - Currency
   properties:
@@ -112,7 +109,6 @@ apis:
   name: Country.io ISO3 API
   description: ISO 3166-1 alpha-3 codes by ISO2 country code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - ISO3
   properties:
@@ -126,7 +122,6 @@ apis:
   name: Country.io Names API
   description: Country names by ISO2 code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - Name
   tags_raw:
@@ -142,7 +137,6 @@ apis:
   name: Country.io Phone API
   description: International dialing codes by ISO2 country code.
   humanURL: https://country.io/data/
-  baseURL: https://country.io
   tags:
   - Phone
   properties:
