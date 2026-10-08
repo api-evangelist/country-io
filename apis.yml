@@ -147,6 +147,12 @@ apis:
   - type: Rules
     url: rules/country-io-data-rules.yml
 common:
+  - type: Plans
+    url: plans/country-io-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/country-io-rate-limits.yml
+  - type: FinOps
+    url: finops/country-io-finops.yml
   - type: AgenticAccess
     url: agentic-access/country-io-agentic-access.yml
   - type: DomainSecurity
