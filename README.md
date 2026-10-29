@@ -1,4 +1,4 @@
-# Country.io (country-io)
+# Country.io
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,72 +66,134 @@
 
 Country.io is a small open data project that publishes a set of static JSON files mapping ISO 3166-1 alpha-2 country codes to common reference data: country names, capital cities, ISO 3166-1 alpha-3 codes, continent codes, international telephone dialing prefixes, and ISO 4217 currency codes. The files are commonly consumed as a lightweight country-data dataset for forms, country pickers, and analytics enrichment.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/country-io/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/country-io/refs/heads/main/apis.yml)
+**Areas:** Capital · Continents · Countries · Currency · Currency Codes · Dialing Codes · Geography · ISO 3166 · JSON · Open Data · Phone Codes · Reference Data
 
-## Scope
+## Country.io on APIs.io
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** Public
+Everything profiled for Country.io is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/country-io/](https://apis.io/providers/country-io/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-- Capitals
-- Continents
-- Countries
-- Currencies
-- Currency Codes
-- Dialing Codes
-- Geography
-- ISO 3166
-- JSON
-- Open Data
-- Phone Codes
-- Reference Data
+- [Country.io Capitals API](https://apis.io/apis/country-io/country-io-capitals-api/) — Capital cities by ISO2 code.
+- [Country.io Continents API](https://apis.io/apis/country-io/country-io-continents-api/) — Continent codes by ISO2 country code.
+- [Country.io Currency API](https://apis.io/apis/country-io/country-io-currency-api/) — Currency codes by ISO2 country code.
+- [Country.io ISO3 API](https://apis.io/apis/country-io/country-io-iso3-api/) — ISO 3166-1 alpha-3 codes by ISO2 country code.
+- [Country.io Names API](https://apis.io/apis/country-io/country-io-names-api/) — Country names by ISO2 code.
+- [Country.io Phone API](https://apis.io/apis/country-io/country-io-phone-api/) — International dialing codes by ISO2 country code.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-02-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Country.io Data API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Country.io exposes six static JSON files under https://country.io. Each file is a flat object keyed by ISO 3166-1 alpha-2 country code and maps to a single reference value: country name, capital city, continent code, ISO3 code, dialing prefix, or currency code. The endpoints are open and unauthenticated.
+- [Country Io Agentic Access](https://apis.io/agentic-access/country-io/country-io-agentic-access/)
 
-- **Human URL:** [https://country.io/data/](https://country.io/data/)
-- **Base URL:** `https://country.io`
+#### Vocabulary (1)
 
-#### Tags
+The provider's domain terms, defined.
 
-- Capitals
-- Countries
-- Currencies
-- ISO 3166
-- Open Data
-- Phone Codes
-- Reference Data
+- [Country.io Vocabulary](https://apis.io/vocabularies/country-io/country-io-vocabulary/)
 
-#### Properties
+#### Collections (7)
 
-- [Documentation](https://country.io/data/)
-- [OpenAPI](openapi/country-io-data-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/country-io-data.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/country-io-data.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Rules](rules/country-io-data-rules.yml)
-- [Capabilities](capabilities/country-io-data-capabilities.yml)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Country.io Data Capitals API](https://apis.io/collections/country-io/open-country-io-capitals-api/)
+- [Country.io Data Capitals Continents API](https://apis.io/collections/country-io/open-country-io-continents-api/)
+- [Country.io Data Capitals Currency API](https://apis.io/collections/country-io/open-country-io-currency-api/)
+- [Country.io Data API](https://apis.io/collections/country-io/open-country-io-data/)
+- [Country.io Data Capitals ISO3 API](https://apis.io/collections/country-io/open-country-io-iso3-api/)
+- [Country.io Data Capitals Names API](https://apis.io/collections/country-io/open-country-io-names-api/)
+- [Country.io Data Capitals Phone API](https://apis.io/collections/country-io/open-country-io-phone-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Country.io — data rules](https://apis.io/rules/country-io/country-io-data-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Country Io Domain Security](https://apis.io/security/country-io/country-io-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Country Io Plans Pricing](https://apis.io/plans/country-io/country-io-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Country Io Rate Limits](https://apis.io/rate-limits/country-io/country-io-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Country Io Finops](https://apis.io/finops/country-io/country-io-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://country.io/)
-- [Data](https://country.io/data/)
-- [Countries](https://country.io/countries/)
-- [Rankings](https://country.io/rankings/)
-- [Contact](https://country.io/contact/)
-- [Vocabulary](vocabulary/country-io-vocabulary.yml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 23.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 43.5 |
+| Contract governance | 25.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 7.9 |
+
+**Agent readiness 23.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/country-io/](https://apis.io/providers/country-io/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Country.io: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/country-io/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
